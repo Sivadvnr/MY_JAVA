@@ -1,6 +1,6 @@
 package TrueLearning;
 
-
+import java.util.function.Predicate;
 
 public class SumOfTwoNumbers{
 	
@@ -12,13 +12,9 @@ public class SumOfTwoNumbers{
 		};
 		
 		s.sum(8, 9);
+		
+		Predicate<Integer> p = i->(i>10);
+		System.out.println(p.test(20));
 	}
-	
-	
-	/*public static void main(String[] args)
-	{
-		SumIntrface s = new SumOfTwoNumbers();
-		s.sum(2, 3);
-	}*/
 
 }
