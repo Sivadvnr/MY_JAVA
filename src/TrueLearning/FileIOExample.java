@@ -31,11 +31,17 @@ public class FileIOExample {
 			
 			System.out.println("------text String written to example1 file -------------");
 			
+			fin.close();
+			fout.close();
+			fout1.close();
+			
 		}
 		catch(Exception exception)
 		{
 			System.out.println(exception);
 		}
+		
+
 		
 		
 	}
